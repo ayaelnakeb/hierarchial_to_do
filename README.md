@@ -71,4 +71,3 @@ Place your environment variables in a `.env` file in the `server` directory:
 
 The app uses Bootstrap for styling, with custom styles defined in `App.css` in the `client/src` folder. You can adjust colors, font sizes, and layouts as needed.
 
-Here is my recorded video: [https://www.loom.com/share/ba296bc3fd3b444ba942db0c11b083a7?sid=14f7d3b7-4bf8-4eb3-95e5-5d2bc95a1b12]
