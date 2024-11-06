@@ -1,0 +1,350 @@
+body,
+html {
+  background: linear-gradient(45deg, #c4dfe6, #d4e8f0);
+  /* Softer gradient */
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #4a90e2;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  color: #4a90e2;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  text-align: center;
+  color: #2d4059;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.column {
+  background: linear-gradient(135deg, #c4dfe6, #a1c6e7);
+  /* Softer, calmer colors */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.Header-brand {
+  width: 100%;
+  background: linear-gradient(45deg, #4a90e2, #6db3f2);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.Header-brand button {
+  background-color: #ffffff;
+  color: #4a90e2;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 50px;
+  float: right;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.Header-brand button:hover {
+  background-color: #d9e4ea;
+}
+
+.Login {
+  max-width: 350px;
+  margin: auto;
+  padding: 1.5rem;
+  background: #f0f3f5;
+  /* Soft background */
+  border-radius: 15px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Login:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Login input {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+}
+
+.Login button {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Login button:hover {
+  background-color: #357abd;
+}
+
+.Login h2 {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  color: #4a90e2;
+}
+
+.Login a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.Login a:hover {
+  text-decoration: underline;
+}
+
+.Login p {
+  margin: 0;
+  text-align: center;
+  color: #4a90e2;
+}
+
+.error-message {
+  color: #d9534f;
+  /* Softer red for errors */
+  text-align: center;
+  margin: 15px 0;
+}
+
+.signup-prompt p {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.task {
+  background: #ffffff;
+  /* White background for clarity */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.taskName {
+  padding: 10px 15px;
+  margin-right: auto;
+  color: #333;
+  font-weight: 600;
+}
+
+.task button,
+.task select {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task button {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.task select {
+  background-color: white;
+  color: #333;
+}
+
+.task button:hover {
+  background-color: #4cae4c;
+}
+
+.delete {
+  background-color: #e74c3c;
+  /* More subtle red */
+  color: white;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete:hover {
+  background-color: #c0392b;
+}
+
+.addTask {
+  margin-top: 25px;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #5cb85c;
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.list-header button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #f0ad4e;
+  /* Muted yellow */
+}
+
+.list-header button:hover {
+  background-color: #ec971f;
+}
+
+.NewTask {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  /* Light gray for less contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.NewTask h2 {
+  text-align: center;
+  color: #4a90e2;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.addSubtaskButton,
+.addSubSubtaskButton,
+.addTaskButton {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.addSubtaskButton:hover,
+.addSubSubtaskButton:hover,
+.addTaskButton:hover {
+  background-color: #357abd;
+}
+
+.subtask-container,
+.sub-subtask-container {
+  margin-left: 20px;
+}
+
+.new-list-container {
+  position: relative;
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card {
+  position: relative;
+}
+
+.cross-button {
+  position: absolute;
+  top: -20px; /* Adjust to position the button above the textbox */
+  right: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff1744;
+  font-weight: bold;
+}
+
+.cross-button:hover {
+  color: #d50000;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
